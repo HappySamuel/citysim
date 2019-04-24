@@ -9,7 +9,7 @@ link_directories(${GAZEBO_LIBRARY_DIRS})
 list(APPEND CMAKE_CXX_FLAGS "${GAZEBO_CXX_FLAGS}")
 
 set (plugins
-  LensFlareVisualPlugin
+#  LensFlareVisualPlugin
   BloomVisualPlugin
 )
 
@@ -19,9 +19,9 @@ foreach (src ${plugins})
   install (TARGETS ${src} DESTINATION ${CITYSIM_PLUGIN_INSTALL_DIR})
 endforeach (src ${plugins})
 
-set (GUIplugin
-  TrafficLightsGUIPlugin
-)
+#set (GUIplugin
+#  TrafficLightsGUIPlugin
+#)
 
 foreach (guiSrc ${GUIplugin})
   add_library(${guiSrc} SHARED ${guiSrc}.cc)
