@@ -15,7 +15,7 @@
 
 1. Source setup file
 
-    . [install_prefix]/share/citysim/setup.sh
+    echo "source [install_prefix]/share/citysim/setup.sh" >> ~/.bashrc
 
 1. Open world
 
