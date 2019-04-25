@@ -1,3 +1,5 @@
+Only Available in Gazebo 9
+
 # Building
 
     mkdir build
